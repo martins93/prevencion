@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Info y Prevencion VIH</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="title_activity_items">TituloItems</string>
+    <string name="title_activity_nav_adapter">TituloNavAdapter</string>
+    <string name="error_player">There was an error initializing the YouTubePlayer (%1$s)</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="videolist_demo_name">Video List</string>
+
+     <string name="minVersion">13</string>
+
+    <string name="isLaunchableActivity">true</string>
+
+    <string name="dummy_section_text">Section %1d is just a dummy section.</string>
+
+    <string name="demo_external_activity">Demo External Activity</string>
+    <string name="demo_collection">Demo Collection</string>
+
+
+    <!-- Lista de titulos de navegacion-->
+    <string-array name="nav_options">
+        <item>VIH y el Sida</item>
+        <item>Ignorancia</item>
+        <item>Capacitacion cercana</item>
+        <item>TeleConsulta</item>
+        <item>Cuestionario</item>
+        <item>Encuesta de satisfaccion</item>
+        <item>Ir a CENSIDA</item>
+    </string-array>
+    <!-- Lista de iconos de navegacion-->
+  <array name="navigation_iconos">
+        <item>@drawable/ic_action_informacion</item>
+        <item>@drawable/ic_action_ignorancia</item>
+        <item>@drawable/ic_action_capacit</item>
+        <item>@drawable/ic_action_tele</item>
+        <item>@drawable/ic_action_cuest</item>
+        <item>@drawable/ic_action_satis</item>
+        <item>@drawable/ic_action_censida</item>
+    </array>
+    <string name="title_activity_tele_consulta">TeleConsulta</string>
+    <string name="title_activity_video_list">VideoList</string>
+    <string name="title_activity_swipe_tab">SwipeTab</string>
+
+        <string name="vih_info">VIH significa: Virus de Inmunodeficiencia Humana.
+Es un virus que afecta las células inmunitarias, encargadas de protegernos de las enfermedades.
+Cada vez más personas CON VIH PUEDEN NO DESARROLAR SIDA. Hoy en día, incluso habiendo tenido sida, se pueden recuperar las defensas y llevar adelante una vida normal teniendo VIH gracias a la eficacia de los medicamentos.
+El tratamiento no cura la infección pero hace que el virus se multiplique más lento y, por lo tanto, no destruya las defensas del cuerpo.</string>
+
+        <string name="vih_prevencion">La única manera de prevenir la transmisión del VIH en las relaciones sexuales es usando correctamente el preservativo desde el inicio y hasta el final de todas las relaciones sexuales.
+La infección por transmisión sanguínea se previene:
+Evitando compartir equipos de inyección, canutos u otros instrumentos cortantes o que pinchen (como los que se utilizan para realizar tatuajes o aritos que no estén esterilizados)
+Transmisión vertical (madre-hijo)
+Es importante que la mujer embarazada y su pareja usen preservativo y realicen el test de VIH e ITS en el embarazo, ya que de esta manera se previene la posibilidad de transmisión de estas infecciones al bebé.
+Cuando una mujer embarazada tiene VIH-sida el virus puede pasar a su bebé en tres momentos: durante el embarazo, en el parto y mientras le da el pecho
+Existen tratamientos especiales para que el virus no pase al bebé que pueden variar en gran medida dependiendo si la mujer está tomando medicación o no.
+Es importante usar el preservativo durante el embarazo para evitar reinfecciones.</string>
+
+    <string name="vih_etapas">Hay tres fases de infección por el VIH:
+    Infección aguda por el VIH
+    La infección aguda es la fase inicial de infección por el VIH. Suele manifestarse de 2 a 4 semanas después de que una persona ha contraído la infección por ese virus. Durante esta fase, muchas personas tienen síntomas similares a los de la influenza (gripe), como fiebre, dolor de cabeza y erupción cutánea. En esta fase, el VIH se reproduce rápidamente y se propaga por todo el organismo. El virus ataca y destruye una clase de glóbulos blancos (linfocitos CD4) del sistema inmunitario que luchan contra la infección. El VIH se puede transmitir durante cualquier fase de infección, pero el riesgo es mayor durante la fase aguda.
+    Infección crónica por el VIH
+    La segunda fase es la infección crónica por el VIH (también llamada infección asintomática por el VIH o fase de latencia clínica.) Durante esta fase de la enfermedad, el VIH sigue reproduciéndose en el cuerpo pero en concentraciones muy bajas. Aunque muchas personas con infección crónica por el VIH no tienen ningún síntoma relacionado con la misma, pueden propagar el virus a otras. Sin tratamiento con medicamentos antirretrovirales, la infección crónica evoluciona al SIDA en un lapso de 10 a 12 años.
+    SIDA
+    El SIDA es la fase final de la infección por el VIH. Puesto que el virus ha destruido el sistema inmunitario, el cuerpo no puede luchar contra las infecciones oportunistas y el cáncer. (La neumonía y la tuberculosis son ejemplos de infecciones oportunistas.) Se diagnostica el SIDA cuando una persona con el VIH tiene un recuento de linfocitos CD4 inferior a 200/mm3 o una o más infecciones oportunistas o ambas cosas. Sin tratamiento, por lo general, las personas con SIDA sobreviven unos 3 años.</string>
+
+</resources>
+
+
