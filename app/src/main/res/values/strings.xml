@@ -49,7 +49,8 @@
         <string name="vih_info"> \n<b>VIH significa</b>: <i>Virus de Inmunodeficiencia Humana</i>.\n
 \nEs un virus que afecta las células inmunitarias, encargadas de protegernos de las enfermedades.
 Cada vez más personas CON VIH PUEDEN NO DESARROLAR SIDA. Hoy en día, incluso habiendo tenido sida, se pueden recuperar las defensas y llevar adelante una vida normal teniendo VIH gracias a la eficacia de los medicamentos.
-El tratamiento no cura la infección pero hace que el virus se multiplique más lento y, por lo tanto, no destruya las defensas del cuerpo.</string>
+El tratamiento no cura la infección pero hace que el virus se multiplique más lento y, por lo tanto, no destruya las defensas del cuerpo.\n
+        \n¿Qué es el SIDA? El SIDA (Síndrome de Inmunodeficiencia Adquirida) es una condición causada por un virus llamado VIH. Este virus ataca al sistema inmunológico, el cual representa a las "fuerzas de seguridad" del cuerpo que combaten las infecciones. Cuando el sistema inmunológico colapsa, pierdes dicha protección y podrías desarrollar muchas infecciones y cánceres severos; y a menudo mortales. Estas se llaman "infecciones oportunistas" (IO) porque se aprovechan de un cuerpo con las defensas debilitadas. Quizás hayas oído decir que alguien" murió de SIDA". Esto no es completamente acertado, ya que las infecciones oportunistas son las que causaron la muerte. El SIDA, es la condición que permite que las IO se desarrollen.</string>
 
         <string name="vih_prevencion">La única manera de prevenir la transmisión del VIH en las relaciones sexuales es usando correctamente el preservativo desde el inicio y hasta el final de todas las relaciones sexuales.
 La infección por transmisión sanguínea se previene:\n
@@ -96,6 +97,11 @@ La circuncisión masculina por razones médicas es una intervención que brinda 
 \nSi se utiliza correctamente en cada coito, el condón es un método de eficacia comprobada para prevenir la infección por el VIH en hombres y mujeres. Sin embargo, fuera de la abstinencia, ningún método protector es totalmente eficaz.\n
 
 </string>
+
+
+    <string name="cuestionario_pregunta1">¿Vivir con VIH significa tener sida?</string>
+    <string name="cuestionario_pregunta2">El VIH afecta sólo a homosexuales, usuarios de drogas y trabajadores sexuales</string>
+
     <string name="title_activity_link_website">LinkWebsite</string>
     <string name="title_activity_encuesta">Encuesta</string>
     <string name="title_activity_cuestionario">Cuestionario</string>

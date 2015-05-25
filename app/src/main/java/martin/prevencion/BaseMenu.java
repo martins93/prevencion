@@ -45,6 +45,8 @@ import java.util.ArrayList;
         this.getActionBar().setCustomView(R.layout.custom_imageview);
         this.getActionBar().setDisplayShowCustomEnabled(true);
 
+
+
         ImageButton menuIcon = (ImageButton) findViewById(R.id.slideMenuButton);
 
         menuIcon.setOnClickListener(new View.OnClickListener() {
@@ -101,7 +103,7 @@ import java.util.ArrayList;
                         Intent intent = new Intent();
                         intent.setAction(Intent.ACTION_VIEW);
                         intent.addCategory(Intent.CATEGORY_BROWSABLE);
-                        intent.setData(Uri.parse("http://www.google.com"));
+                        intent.setData(Uri.parse("http://www.censida.salud.gob.mx/"));
                         startActivity(intent);
                         BaseMenu.this.finish();
                         break;
@@ -109,6 +111,14 @@ import java.util.ArrayList;
                     case(5):
                     {
                         Intent k = new Intent(BaseMenu.this, Encuesta.class);
+                        k.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                        startActivityForResult(k, 0);
+                        BaseMenu.this.finish();
+                        break;
+                    }
+                    case(4):
+                    {
+                        Intent k = new Intent(BaseMenu.this, Cuestionario.class);
                         k.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                         startActivityForResult(k, 0);
                         BaseMenu.this.finish();
