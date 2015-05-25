@@ -14,9 +14,12 @@
 <TextView xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@android:id/text1"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:gravity="center"
-    android:textSize="18sp"
-    android:padding="30dp" />
+    android:textSize="15sp"
+    android:lineSpacingExtra="1.5dp"
+    android:shadowRadius="@integer/abc_config_activityDefaultDur"
+    android:textColor="#263238"
+    />
 </ScrollView>
 </LinearLayout>

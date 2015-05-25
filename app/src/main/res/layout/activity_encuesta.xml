@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="martin.prevencion.Encuesta"
+    android:background="#FFFFFF">
+
+
+    <EditText
+        android:id="@+id/encuestas_nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:hint="@string/encuesta_nombre"
+        android:textColor="#000000"
+        android:textColorHint="#78909C"
+        android:inputType="textUri" />
+    <EditText
+        android:id="@+id/encuesta_email"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/encuesta_email"
+        android:textColorHint="#78909C"
+        android:textColor="#000000"
+        android:inputType="textEmailAddress"
+        android:layout_below="@+id/encuestas_nombre"
+        />
+    <EditText
+        android:id="@+id/encuesta_opinion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="@string/encuesta_opinion"
+        android:textColorHint="#78909C"
+        android:textColor="#000000"
+        android:inputType="textMultiLine"
+
+        android:layout_below="@+id/encuesta_email"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enviar Encuesta"
+        android:id="@+id/buttonEnviar"
+        android:textColor="#FFFFFF"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

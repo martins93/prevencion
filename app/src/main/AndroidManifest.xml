@@ -38,7 +38,22 @@
             android:name=".SwipeTab"
             android:label="@string/title_activity_swipe_tab" >
         </activity>
-
+        <activity
+            android:name=".Ignorancia"
+            android:label="@string/title_activity_ignorancia" >
+        </activity>
+        <activity
+            android:name=".LinkWebsite"
+            android:label="@string/title_activity_link_website" >
+        </activity>
+        <activity
+            android:name=".Encuesta"
+            android:label="@string/title_activity_encuesta" >
+        </activity>
+        <activity
+            android:name=".Cuestionario"
+            android:label="@string/title_activity_cuestionario" >
+        </activity>
     </application>
 
 </manifest>

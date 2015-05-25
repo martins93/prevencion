@@ -17,7 +17,9 @@
 package martin.prevencion;
 
 import android.app.ActionBar;
+import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
@@ -32,7 +34,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-public class SwipeTab extends FragmentActivity{
+import java.util.zip.Inflater;
+
+public class SwipeTab extends BaseMenu{
 
     static String value1,value2,value3;
 
@@ -52,7 +56,11 @@ public class SwipeTab extends FragmentActivity{
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_collection_demo);
+
+
+        LayoutInflater inflater = (LayoutInflater)this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        View encuesta = inflater.inflate(R.layout.activity_collection_demo,null);
+        pri.addView(encuesta);
 
         value1 = getResources().getString(R.string.vih_info);
         value2 = getResources().getString(R.string.vih_prevencion);
@@ -66,17 +74,13 @@ public class SwipeTab extends FragmentActivity{
         // getSupportFragmentManager.
        mDemoCollectionPagerAdapter = new DemoCollectionPagerAdapter(getSupportFragmentManager());
 
-        // Set up action bar.
-        final ActionBar actionBar = getActionBar();
 
-
-        // Specify that the Home button should show an "Up" caret, indicating that touching the
-        // button will take the user one step up in the application's hierarchy.
-        actionBar.setDisplayHomeAsUpEnabled(true);
 
         // Set up the ViewPager, attaching the adapter.
         mViewPager = (ViewPager) findViewById(R.id.pager);
         mViewPager.setAdapter(mDemoCollectionPagerAdapter);
+
+
     }
 
     @Override
@@ -127,9 +131,9 @@ public class SwipeTab extends FragmentActivity{
           String name="";
             switch(position)
           {
-              case(0): {name="VIH y el Sida";break;}
-              case(1): {name="Etapas";break;}
-              case(2): {name="Prevencion";break;}
+              case(0): {name="VIH Y EL SIDA";break;}
+              case(1): {name="ETAPAS";break;}
+              case(2): {name="PREVENCION";break;}
           }
         return name;
 
@@ -163,7 +167,6 @@ public class SwipeTab extends FragmentActivity{
             Bundle args = getArguments();
             ((TextView) rootView.findViewById(android.R.id.text1)).setText(
                    args.getString(ARG_OBJECT));
-
             return rootView;
         }
     }

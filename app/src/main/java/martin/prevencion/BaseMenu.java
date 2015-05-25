@@ -4,12 +4,16 @@ import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.res.TypedArray;
+import android.net.Uri;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
 import android.support.v4.widget.DrawerLayout;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.ListView;
 
@@ -18,10 +22,11 @@ import java.util.ArrayList;
 /**
  * Created by Martin on 18/05/2015.
  */
- public class BaseMenu extends Activity {
+ public class BaseMenu extends FragmentActivity {
 
     protected String[] titulos;
     protected DrawerLayout NavDrawerLayout;
+    protected FrameLayout pri;
     protected ListView NavList;
     protected ArrayList<Items> NavItms;
     protected TypedArray NavIcons;
@@ -29,10 +34,12 @@ import java.util.ArrayList;
     View menu;
     LayoutInflater f;
 
-    protected void onCreateDrawer(Bundle savedInstanceState) {
-       // super.onCreate(savedInstanceState);
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
         setContentView(R.layout.lateral);
         generateLateralMenu();
+
+        pri = (FrameLayout) findViewById(R.id.principal_layout);
 
         this.getActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
         this.getActionBar().setCustomView(R.layout.custom_imageview);
@@ -45,19 +52,19 @@ import java.util.ArrayList;
             @Override
             public void onClick(View view) {
                 if (NavDrawerLayout.isDrawerOpen(Gravity.START)) {
-
                    NavDrawerLayout.closeDrawer(Gravity.START);
                 } else
 
-              {
-
+                {
                     NavDrawerLayout.openDrawer(Gravity.START);
                 }
 
             }
         });
 
+
         NavList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
 
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -76,6 +83,32 @@ import java.util.ArrayList;
                     case(0):
                     {
                         Intent k = new Intent(BaseMenu.this, SwipeTab.class);
+                        k.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                        startActivityForResult(k, 0);
+                        BaseMenu.this.finish();
+                        break;
+                    }
+                    case(1):
+                    {
+                        Intent k = new Intent(BaseMenu.this, Ignorancia.class);
+                        k.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                        startActivityForResult(k, 0);
+                        BaseMenu.this.finish();
+                        break;
+                    }
+                    case(6):
+                    {
+                        Intent intent = new Intent();
+                        intent.setAction(Intent.ACTION_VIEW);
+                        intent.addCategory(Intent.CATEGORY_BROWSABLE);
+                        intent.setData(Uri.parse("http://www.google.com"));
+                        startActivity(intent);
+                        BaseMenu.this.finish();
+                        break;
+                    }
+                    case(5):
+                    {
+                        Intent k = new Intent(BaseMenu.this, Encuesta.class);
                         k.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                         startActivityForResult(k, 0);
                         BaseMenu.this.finish();

@@ -18,6 +18,9 @@
     <string name="demo_external_activity">Demo External Activity</string>
     <string name="demo_collection">Demo Collection</string>
 
+    <string name="encuesta_nombre">Ingrese su nombre</string>
+    <string name="encuesta_email">Ingrese su direccion de Email</string>
+    <string name="encuesta_opinion">Por favor haga su comentario</string>
 
     <!-- Lista de titulos de navegacion-->
     <string-array name="nav_options">
@@ -43,13 +46,13 @@
     <string name="title_activity_video_list">VideoList</string>
     <string name="title_activity_swipe_tab">SwipeTab</string>
 
-        <string name="vih_info">VIH significa: Virus de Inmunodeficiencia Humana.
-Es un virus que afecta las células inmunitarias, encargadas de protegernos de las enfermedades.
+        <string name="vih_info"> \n<b>VIH significa</b>: <i>Virus de Inmunodeficiencia Humana</i>.\n
+\nEs un virus que afecta las células inmunitarias, encargadas de protegernos de las enfermedades.
 Cada vez más personas CON VIH PUEDEN NO DESARROLAR SIDA. Hoy en día, incluso habiendo tenido sida, se pueden recuperar las defensas y llevar adelante una vida normal teniendo VIH gracias a la eficacia de los medicamentos.
 El tratamiento no cura la infección pero hace que el virus se multiplique más lento y, por lo tanto, no destruya las defensas del cuerpo.</string>
 
         <string name="vih_prevencion">La única manera de prevenir la transmisión del VIH en las relaciones sexuales es usando correctamente el preservativo desde el inicio y hasta el final de todas las relaciones sexuales.
-La infección por transmisión sanguínea se previene:
+La infección por transmisión sanguínea se previene:\n
 Evitando compartir equipos de inyección, canutos u otros instrumentos cortantes o que pinchen (como los que se utilizan para realizar tatuajes o aritos que no estén esterilizados)
 Transmisión vertical (madre-hijo)
 Es importante que la mujer embarazada y su pareja usen preservativo y realicen el test de VIH e ITS en el embarazo, ya que de esta manera se previene la posibilidad de transmisión de estas infecciones al bebé.
@@ -57,13 +60,45 @@ Cuando una mujer embarazada tiene VIH-sida el virus puede pasar a su bebé en tr
 Existen tratamientos especiales para que el virus no pase al bebé que pueden variar en gran medida dependiendo si la mujer está tomando medicación o no.
 Es importante usar el preservativo durante el embarazo para evitar reinfecciones.</string>
 
-    <string name="vih_etapas">Hay tres fases de infección por el VIH:
-    Infección aguda por el VIH
-    La infección aguda es la fase inicial de infección por el VIH. Suele manifestarse de 2 a 4 semanas después de que una persona ha contraído la infección por ese virus. Durante esta fase, muchas personas tienen síntomas similares a los de la influenza (gripe), como fiebre, dolor de cabeza y erupción cutánea. En esta fase, el VIH se reproduce rápidamente y se propaga por todo el organismo. El virus ataca y destruye una clase de glóbulos blancos (linfocitos CD4) del sistema inmunitario que luchan contra la infección. El VIH se puede transmitir durante cualquier fase de infección, pero el riesgo es mayor durante la fase aguda.
-    Infección crónica por el VIH
-    La segunda fase es la infección crónica por el VIH (también llamada infección asintomática por el VIH o fase de latencia clínica.) Durante esta fase de la enfermedad, el VIH sigue reproduciéndose en el cuerpo pero en concentraciones muy bajas. Aunque muchas personas con infección crónica por el VIH no tienen ningún síntoma relacionado con la misma, pueden propagar el virus a otras. Sin tratamiento con medicamentos antirretrovirales, la infección crónica evoluciona al SIDA en un lapso de 10 a 12 años.
-    SIDA
+    <string name="vih_etapas">Hay tres fases de infección por el VIH:\n
+    \nInfección aguda por el VIH\n
+    La infección aguda es la fase inicial de infección por el VIH. Suele manifestarse de 2 a 4 semanas después de que una persona ha contraído la infección por ese virus. Durante esta fase, muchas personas tienen síntomas similares a los de la influenza (gripe), como fiebre, dolor de cabeza y erupción cutánea. En esta fase, el VIH se reproduce rápidamente y se propaga por todo el organismo. El virus ataca y destruye una clase de glóbulos blancos (linfocitos CD4) del sistema inmunitario que luchan contra la infección. El VIH se puede transmitir durante cualquier fase de infección, pero el riesgo es mayor durante la fase aguda.\n
+    \nInfección crónica por el VIH\n
+    La segunda fase es la infección crónica por el VIH (también llamada infección asintomática por el VIH o fase de latencia clínica.) Durante esta fase de la enfermedad, el VIH sigue reproduciéndose en el cuerpo pero en concentraciones muy bajas. Aunque muchas personas con infección crónica por el VIH no tienen ningún síntoma relacionado con la misma, pueden propagar el virus a otras. Sin tratamiento con medicamentos antirretrovirales, la infección crónica evoluciona al SIDA en un lapso de 10 a 12 años.\n
+    \nSIDA\n
     El SIDA es la fase final de la infección por el VIH. Puesto que el virus ha destruido el sistema inmunitario, el cuerpo no puede luchar contra las infecciones oportunistas y el cáncer. (La neumonía y la tuberculosis son ejemplos de infecciones oportunistas.) Se diagnostica el SIDA cuando una persona con el VIH tiene un recuento de linfocitos CD4 inferior a 200/mm3 o una o más infecciones oportunistas o ambas cosas. Sin tratamiento, por lo general, las personas con SIDA sobreviven unos 3 años.</string>
+    <string name="title_activity_ignorancia">Ignorancia</string>
+
+    <string name="vih_preguntas">\n<b><i>¿Cuánto tiempo tarda en aparecer el sida en las personas infectadas con el VIH?</i></b> \n
+
+\n Este periodo puede variar mucho de una persona a otra. Si no se da tratamiento, la mayoría de los infectados por el VIH presentan signos de enfermedad al cabo de 5 a 10 años, aunque el periodo puede ser más breve. El tiempo que transcurre entre la infección por el VIH y el diagnóstico de sida puede variar entre 10 y 15 años, a veces más. El tratamiento con antirretrovíricos puede hacer más lenta la evolución porque evita la multiplicación del virus y, en consecuencia, disminuye la cantidad de virus presente en la sangre del individuo infectado (la llamada «carga vírica»). \n
+\n<b><i>¿Cuál es la infección oportunista que afecta con más frecuencia a las personas infectadas con el VIH y puede causarles la muerte?</i></b>\n
+
+\nCada año, la tuberculosis mata a casi 360 000 personas infectadas con el VIH. En África, es la causa principal de muerte de las personas infectadas por el VIH; a escala mundial, es una de las causas principales en este grupo. Para prevenir y tratar la tuberculosis combinada con la infección por el VIH, son decisivas varias estrategias sanitarias básicas:\n
+
+la intensificación de la detección de casos de tuberculosis activa;
+el tratamiento preventivo con isoniazida;
+el control de la infección tuberculosa;
+el inicio temprano del tratamiento con antirretrovíricos.\n
+\n<b><i>¿Cómo puedo limitar el riesgo de infectarme por el VIH por medio de las relaciones sexuales?</i></b>\n
+
+\nCada vez que tenga relaciones sexuales, utilice correctamente el condón masculino o femenino.
+Absténgase de practicar las relaciones sexuales con penetración.
+Sea fiel a una pareja sexual que no esté infectada, sea igualmente fiel y no tenga ningún otro comportamiento de riesgo.\n
+\n<b><i>La circuncisión masculina, ¿previene la transmisión del VIH?</i></b>\n
+
+\nLa circuncisión masculina reduce en un 60% el riesgo de transmisión sexual de las mujeres a los hombres. Desde 2007, la OMS y el ONUSIDA han recomendado la circuncisión médica voluntaria como una estrategia suplementaria importante para prevenir la infección por el VIH en lugares donde esta tiene gran prevalencia y la circuncisión masculina es poco frecuente. Catorce países del este y el sur de África que reúnen estas características han iniciado programas para ampliar la circuncisión masculina.
+
+La circuncisión masculina por razones médicas es una intervención que brinda protección parcial para toda la vida contra las infecciones de transmisión sexual, en especial la causada por el VIH. Siempre ha de considerarse como parte de un conjunto completo de medidas preventivas y nunca debe remplazar a otros métodos conocidos, como el uso del condón femenino o masculino.\n
+
+\n<b><i>¿Cuán eficaz es el condón para prevenir la infección por el VIH?</i></b>\n
+
+\nSi se utiliza correctamente en cada coito, el condón es un método de eficacia comprobada para prevenir la infección por el VIH en hombres y mujeres. Sin embargo, fuera de la abstinencia, ningún método protector es totalmente eficaz.\n
+
+</string>
+    <string name="title_activity_link_website">LinkWebsite</string>
+    <string name="title_activity_encuesta">Encuesta</string>
+    <string name="title_activity_cuestionario">Cuestionario</string>
 
 </resources>
 

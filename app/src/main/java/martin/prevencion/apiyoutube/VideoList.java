@@ -32,12 +32,15 @@ import com.google.android.youtube.player.YouTubeThumbnailView;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
+import android.app.ActionBar;
+import android.app.Activity;
 import android.app.ListFragment;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Build;
 import android.os.Bundle;
+import android.util.AttributeSet;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -46,6 +49,7 @@ import android.view.ViewGroup.LayoutParams;
 import android.view.ViewPropertyAnimator;
 import android.widget.BaseAdapter;
 import android.widget.FrameLayout;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -91,10 +95,10 @@ public final class VideoList extends BaseMenu implements OnFullscreenListener {
 
         super.onCreate(savedInstanceState);
 
+        LayoutInflater inflater = (LayoutInflater)this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        View encuesta = inflater.inflate(R.layout.video_list_demo,null);
+        pri.addView(encuesta);
 
-        setContentView(R.layout.video_list_demo);
-
-        super.onCreateDrawer(savedInstanceState);
 
 
         listFragment = (VideoListFragment) getFragmentManager().findFragmentById(R.id.list_fragment);
@@ -102,13 +106,8 @@ public final class VideoList extends BaseMenu implements OnFullscreenListener {
                 (VideoFragment) getFragmentManager().findFragmentById(R.id.video_fragment_container);
 
 
-        LayoutInflater inflater = (LayoutInflater)getApplicationContext().getSystemService
-                (Context.LAYOUT_INFLATER_SERVICE);
-        View rootView = inflater.inflate(R.layout.video_list_demo,null);
-
-
-        videoBox = rootView.findViewById(R.id.video_box);
-        closeButton = rootView.findViewById(R.id.close_button);
+        videoBox = findViewById(R.id.video_box);
+        closeButton = findViewById(R.id.close_button);
         videoBox.setVisibility(View.INVISIBLE);
 
         layout();
@@ -117,8 +116,6 @@ public final class VideoList extends BaseMenu implements OnFullscreenListener {
 
 
     }
-
-
 
     private void checkYouTubeApi() {
         YouTubeInitializationResult errorReason =
@@ -285,7 +282,7 @@ public final class VideoList extends BaseMenu implements OnFullscreenListener {
     }
 
     @Override
-    public void onBackPressed() {
+        public void onBackPressed() {
         Intent k = new Intent(VideoList.this, MainActivity.class);
         k.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
         startActivityForResult(k, 0);
