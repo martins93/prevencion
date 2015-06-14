@@ -19,7 +19,7 @@
         android:inputType="textUri" />
     <EditText
         android:id="@+id/encuesta_email"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/encuesta_email"
@@ -32,7 +32,7 @@
         android:id="@+id/encuesta_opinion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:hint="@string/encuesta_opinion"
         android:textColorHint="#78909C"
         android:textColor="#000000"
@@ -46,6 +46,7 @@
         android:layout_height="wrap_content"
         android:text="Enviar Encuesta"
         android:id="@+id/buttonEnviar"
+        android:layout_below="@id/encuesta_opinion"
         android:textColor="#FFFFFF"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />

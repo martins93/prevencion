@@ -105,7 +105,6 @@ import java.util.ArrayList;
                         intent.addCategory(Intent.CATEGORY_BROWSABLE);
                         intent.setData(Uri.parse("http://www.censida.salud.gob.mx/"));
                         startActivity(intent);
-                        BaseMenu.this.finish();
                         break;
                     }
                     case(5):
@@ -121,6 +120,7 @@ import java.util.ArrayList;
                         Intent k = new Intent(BaseMenu.this, Cuestionario.class);
                         k.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                         startActivityForResult(k, 0);
+
                         BaseMenu.this.finish();
                         break;
                     }

@@ -3,6 +3,7 @@ package martin.prevencion;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -11,8 +12,11 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
 
@@ -25,57 +29,66 @@ public class Cuestionario extends BaseMenu {
         View encuesta = inflater.inflate(R.layout.activity_cuestionario,null);
         pri.addView(encuesta);
 
-        final RadioGroup radioGroup = (RadioGroup) findViewById(R.id.radio_group);
-        radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener()
-        {
-            @Override
-            public void onCheckedChanged(RadioGroup group, int checkedId) {
-               // boolean checked = ((RadioButton) radioGroup.get).isChecked();
-                boolean checked = true;
+        final TextView resp1 = (TextView) findViewById(R.id.textRespuesta1);
+        final TextView resp2 = (TextView) findViewById(R.id.textRespuesta2);
+        final RadioGroup radioGroup1 = (RadioGroup) findViewById(R.id.radio_group1);
+        final RadioGroup radioGroup2 = (RadioGroup) findViewById(R.id.radio_group2);
+
+        final Button button = (Button) findViewById(R.id.buttonConfirmar);
+        button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
 
 
-                // Check which radio button was clicked
-                switch(checkedId) {
-                    case R.id.radioButton:
-                        if (checked) {Context context = getApplicationContext();
-                            CharSequence text = "CORRECTO!";
-                            int duration = Toast.LENGTH_SHORT;
-                            Toast toast = Toast.makeText(context, text, duration);
-                            toast.show();
-                        }
-                        break;
-                    case R.id.radioButton2:
-                        if (checked)
-                        {Context context = getApplicationContext();
-                            CharSequence text = "INCORRECTO! Con los tratamientos actuales se puede evitar la progresión a desarrollar enfermedades, por eso muchas personas que viven con VIH logran evitar la etapa sida";
-                            int duration = Toast.LENGTH_LONG;
-                            Toast toast = Toast.makeText(context, text, duration);
-                            toast.show();
-                        }
-                        break;
-                    case R.id.radioButton4:
-                        if (checked)
-                        {Context context = getApplicationContext();
-                            CharSequence text = "INCORRECTO! Cualquiera que haya tenido una relación sexual sin preservativo puede adquirir el VIH";
-                            int duration = Toast.LENGTH_LONG;
-                            Toast toast = Toast.makeText(context, text, duration);
-                            toast.show();
-                        }
-                        break;
-                    case R.id.radioButton5:
-                        if (checked)
-                        {Context context = getApplicationContext();
-                            CharSequence text = "CORRECTO!";
-                            int duration = Toast.LENGTH_SHORT;
-                            Toast toast = Toast.makeText(context, text, duration);
-                            toast.show();
-                        }
-                        break;
 
-                }
+
+                        // Check which radio button was clicked
+                        switch(radioGroup1.getCheckedRadioButtonId()) {
+                            case R.id.radioPreg1:
+                                 {
+                                    resp1.setVisibility(View.VISIBLE);
+                                    resp1.setTextColor(Color.parseColor("#F44336"));
+                                    resp1.setText("Respuesta 1: Incorrecta. Con los tratamientos actuales se puede evitar la progresión a desarrollar enfermedades.");
+
+                                }
+                                break;
+                            case R.id.radioPreg2:
+
+                                {
+                                    resp1.setVisibility(View.VISIBLE);
+                                    resp1.setTextColor(Color.parseColor("#2196F3"));
+                                    resp1.setText("Respuesta 1: Correcta. Dados los tratamientos actuales muchas personas que viven con VIH logran evitar la etapa sida.");
+                                }
+                                break;
+                        }
+
+
+
+
+
+                        // Check which radio button was clicked
+                        switch(radioGroup2.getCheckedRadioButtonId()) {
+                            case R.id.radioPreg3:
+                               {
+
+                                    resp2.setVisibility(View.VISIBLE);
+                                    resp2.setTextColor(Color.parseColor("#F44336"));
+                                    resp2.setText("Respuesta 2: Incorrecta. Cualquiera que haya tenido una relación sexual sin preservativo puede adquirir el VIH.");
+                                }
+                                break;
+                            case R.id.radioPreg4:
+
+                                {
+                                    resp2.setVisibility(View.VISIBLE);
+                                    resp2.setTextColor(Color.parseColor("#2196F3"));
+                                    resp2.setText("Respuesta 2: Correcta. El VIH nos afecta a todos.");
+                                }
+                                break;
+                        }
 
             }
         });
+
+
 
 
 

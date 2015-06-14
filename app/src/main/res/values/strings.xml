@@ -52,7 +52,7 @@ Cada vez más personas CON VIH PUEDEN NO DESARROLAR SIDA. Hoy en día, incluso h
 El tratamiento no cura la infección pero hace que el virus se multiplique más lento y, por lo tanto, no destruya las defensas del cuerpo.\n
         \n¿Qué es el SIDA? El SIDA (Síndrome de Inmunodeficiencia Adquirida) es una condición causada por un virus llamado VIH. Este virus ataca al sistema inmunológico, el cual representa a las "fuerzas de seguridad" del cuerpo que combaten las infecciones. Cuando el sistema inmunológico colapsa, pierdes dicha protección y podrías desarrollar muchas infecciones y cánceres severos; y a menudo mortales. Estas se llaman "infecciones oportunistas" (IO) porque se aprovechan de un cuerpo con las defensas debilitadas. Quizás hayas oído decir que alguien" murió de SIDA". Esto no es completamente acertado, ya que las infecciones oportunistas son las que causaron la muerte. El SIDA, es la condición que permite que las IO se desarrollen.</string>
 
-        <string name="vih_prevencion">La única manera de prevenir la transmisión del VIH en las relaciones sexuales es usando correctamente el preservativo desde el inicio y hasta el final de todas las relaciones sexuales.
+        <string name="vih_prevencion">\nLa única manera de prevenir la transmisión del VIH en las relaciones sexuales es usando correctamente el preservativo desde el inicio y hasta el final de todas las relaciones sexuales.
 La infección por transmisión sanguínea se previene:\n
 Evitando compartir equipos de inyección, canutos u otros instrumentos cortantes o que pinchen (como los que se utilizan para realizar tatuajes o aritos que no estén esterilizados)
 Transmisión vertical (madre-hijo)
@@ -61,7 +61,7 @@ Cuando una mujer embarazada tiene VIH-sida el virus puede pasar a su bebé en tr
 Existen tratamientos especiales para que el virus no pase al bebé que pueden variar en gran medida dependiendo si la mujer está tomando medicación o no.
 Es importante usar el preservativo durante el embarazo para evitar reinfecciones.</string>
 
-    <string name="vih_etapas">Hay tres fases de infección por el VIH:\n
+    <string name="vih_etapas">\nHay tres fases de infección por el VIH:\n
     \nInfección aguda por el VIH\n
     La infección aguda es la fase inicial de infección por el VIH. Suele manifestarse de 2 a 4 semanas después de que una persona ha contraído la infección por ese virus. Durante esta fase, muchas personas tienen síntomas similares a los de la influenza (gripe), como fiebre, dolor de cabeza y erupción cutánea. En esta fase, el VIH se reproduce rápidamente y se propaga por todo el organismo. El virus ataca y destruye una clase de glóbulos blancos (linfocitos CD4) del sistema inmunitario que luchan contra la infección. El VIH se puede transmitir durante cualquier fase de infección, pero el riesgo es mayor durante la fase aguda.\n
     \nInfección crónica por el VIH\n
